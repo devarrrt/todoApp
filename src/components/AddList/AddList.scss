@@ -1,0 +1,70 @@
+.add__list {
+
+	&-popup {
+		width: 240px;
+		height: 150px;
+		background-color: rgba(254, 252, 255, 0.364);
+		box-shadow: 0px 3px 10px rgba(162, 162, 162, 0.8);
+		border-radius: 20px;
+		padding: 22px 22px 0 22px;
+		position: relative;
+
+		&-color {
+			margin-top: 12px;
+			display: flex;
+			justify-content: space-between;
+
+			.badge {
+				width: 23px;
+				height: 23px;
+				border: 2px solid transparent;
+				transition: all 0.2s linear;
+
+				&:hover {
+					border: 2px solid rgb(126, 126, 126);
+					box-shadow: 0px 3px 10px rgba(162, 162, 162, 0.8);
+				}
+
+				&.active {
+					border: 2px solid rgb(126, 126, 126);
+					box-shadow: 0px 3px 10px rgba(162, 162, 162, 0.8);
+				}
+			}
+		}
+
+		&-close{
+			position: absolute;
+			right: -17px;
+			top: -17px;
+			border: 0;
+			border-radius: 30px;
+			height: 40px;
+			width: 40px;
+			cursor: pointer;
+			color: rgb(128, 128, 128);
+			font-size: 11px;
+			opacity: 0.8;
+			transition: all 0.3s linear;
+
+			&:hover{
+				box-shadow: 0px 3px 10px rgba(162, 162, 162, 0.8);
+				opacity: 1;
+				color: rgb(232, 232, 232);
+				background-color: rgba(120, 81, 140, 0.659);
+			}
+
+		&.form{
+				position: absolute;
+				left: -45px;
+				top: 0px;
+			}
+		}
+
+		.button {
+			width: 100%;
+			margin-top: 15px;
+		}
+
+
+	}
+}
